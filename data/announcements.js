@@ -5,7 +5,7 @@ export const announcement = {
   id: 'sample-announcement-1',
   tag: 'Announcement',
   title: 'Free health check-up camp this Sunday',
-  text: 'Sample message. Replace this text in data/announcements.js with your real announcement.',
+  text: 'Coded By Siddique - V 2.0.7',
   ctaLabel: 'Book a visit',
   href: '/book',
 };
