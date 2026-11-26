@@ -38,3 +38,8 @@ create table if not exists blocks (
 -- Only the server (service_role key) may read or write. Do not add public policies: it holds patient phone numbers.
 alter table bookings enable row level security;
 alter table blocks enable row level security;
+
+-- Let the server key use the tables (harmless if already granted).
+grant usage on schema public to service_role;
+grant all on table bookings, blocks to service_role;
+grant usage, select on all sequences in schema public to service_role;
